@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+  }
+  img{
+    margin-top: -0.07rem;
+    margin-left: -0.1px;
+}
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #app{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+  }
+  .game{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .screen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background-position:center;
+    object-position: top;
+    z-index: 200;
+  }
+  .shade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .welcome{
+    position: absolute;
+    top: 7rem;
+    width: 100vw;
+    height: 4rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #00000090;
+    font-size: 0.3rem;
+  }
+  .welcome :last-child{
+    color: red;
+  }
+  .footer{
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+  }
+  .choiceItem{
+    width: 3rem;
+    height: 1rem;
+    margin-top: 1rem;
+    background-color: gray;
+    color:#ffffff;
+  }
+  .top{
+    display: flex;
+    border-bottom: 3px solid #ffffff;
+  }
+  .map{
+      border: 1px solid #ffffff;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    overflow: hidden;
+  }
+  .content .infoitem{
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .alert{
+    display: flex;
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+    background-color: #00000060;
+  }
+  .npc{
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 4rem;
+      bottom: 0;
+      background-color: gray;
+      display: none;
+      font-size: 0.4rem;
+      z-index: 200;
+  }
+  .equipinfo{
+      height: 10rem;
+      width: 7rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      background-color: #00000060;
+      border: 2px solid #ffffff;
+  }
+  .equipinfo div{
+    display: flex;
+    align-items: center;
+  }
+  .bookInfo{
+    height: 10rem;
+    width: 7rem;
+    display: flex;
+    overflow:scroll;
+    flex-direction: column;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    background-color: #00000060;
+    border: 2px solid #ffffff;
+  }
+  .helpinfo{
+    height: 10rem;
+    width: 7rem;
+    display: none;
+    overflow:scroll;
+    flex-direction: column;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    font-size: 0.4rem;
+  }
+  .helpinfo p{
+    margin-top: 0.2rem;
+  }
+  .bookInfo div{
+    display: flex;
+    flex:1;
+    align-items: center;
+  }
+  .shopInfo{
+    height: 300px;
+    width: 150px;
+    display: none;
+    overflow:scroll;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+    top: 0.5rem;
+    background-color: #00000060;
+    border: 2px solid #ffffff;
+    scrollbar-track-color: #ffffff !important;
+  }
+  .menuContent{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000080;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .menuContent button{
+    width: 2rem;
+    height: 1rem;
+    margin-top: 2rem;
+    background-color: gray;
+    color: #ffffff;
+  }
+  .item{
+    flex: 1;
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .equip{
+    width: 100%;
+    height: 1rem;
+  }
+  .equipimg{
+    width: 1rem;
+    height: 1rem;
+  }
+  .optionList{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .optionList .caidan{
+    flex:2
+  }
+  .optionList .caidan button{
+    width: 1rem;
+    height: 1rem;
+  }
+  .optionList .option{
+    flex: 6;
+  }
+  .optionList .message{
+    flex: 2;
+  }
+  .option {
+    height: 4rem;
+    position: relative;
+  }
+  .option button {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .option .up {
+    left: 2rem;
+    top: 0;
+  }
+  .option .left {
+    top: 2rem;
+    left: 0;
+  }
+  .option .right {
+    top:2rem;
+    left:4rem;
+  }
+  .option .down {
+    top: 2rem;
+    left:2rem;
+  }
+  .message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .message div{
+    width: 50%;
+  }
+  .nostore{
+    margin: 8rem auto;
+    text-align: center;
+  }
+  .optionStore{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content:space-between;
+  }
+  .optionStore button{
+    width: 2rem;
+    height: 1rem;
+    color: #ffffff;
+  }
+  .optionStore button:first-child{
+    background-color: #409EFF;
+  }
+  .optionStore button:last-child{
+    background-color: #F56C6C;
+  }
+  .back{
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .storeItem{
+    background-color: #414141;
+    display: flex;
+    height: 1rem;
+    font-size: 0.3rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.2rem;
+  }
+  .positionDiv{
+    position: absolute;
+    width: 7.7rem;
+    height: 10.8rem;
+  }
