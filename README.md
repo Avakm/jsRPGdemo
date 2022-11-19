@@ -11,4 +11,3 @@ js编程实现魔塔小游戏（移动端）   技术栈：html+css+JavaScript+w
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0902/155604_d30db445_7789347.png "3120796083-612a1efd239ac_fix732.png")
 
 本游戏支持点击自动寻路功能
-[在线体验：](http://mota.cong373.top)http://mota.cong373.top
