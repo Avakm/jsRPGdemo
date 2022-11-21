@@ -1,3 +1,4 @@
+//装备列表
 const equipment=[
     {
         id:30001,
