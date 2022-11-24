@@ -1,3 +1,4 @@
+//怪物列表
 const MonsterList=[
     {
         id:4,
