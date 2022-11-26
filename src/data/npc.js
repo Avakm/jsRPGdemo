@@ -1,3 +1,4 @@
+//npc对话列表
 const npcList=[
     {
         id:21,
