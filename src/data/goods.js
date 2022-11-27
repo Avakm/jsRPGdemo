@@ -1,3 +1,4 @@
+//商品列表
 const goodsList=[
     {
         id:6,
