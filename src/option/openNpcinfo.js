@@ -2,11 +2,9 @@
 
 function openNpcinfo(value,index){
     const npc=document.querySelector('.npc');
-        new Promise((resolve)=>{
             npc.style.display='block';
             npc.innerHTML=value[index];
-            resolve();
-        }).then(()=>{
+
             npc.onclick=()=>{
                 npc.style.display='none';
                 if(index==value.length-1){
@@ -16,7 +14,6 @@ function openNpcinfo(value,index){
                     openNpcinfo(value,index);
                 }
             }
-        })
 }
 
 export default openNpcinfo;
