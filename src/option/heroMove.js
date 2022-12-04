@@ -1,6 +1,7 @@
 import * as move from './move';
 import PF from 'pathfinding'
 import {playFooter} from './optionBgm';
+//英雄移动
 function heroMove(hero,maps){
     //获取按钮
     const up=document.querySelector('.up');
