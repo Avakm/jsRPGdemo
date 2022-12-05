@@ -1,5 +1,4 @@
-# 魔塔
-
+js制作的rpg小游戏
 ## 介绍
 js编程实现魔塔小游戏（移动端）   技术栈：html+css+JavaScript+webpack
 ### 游戏主页
