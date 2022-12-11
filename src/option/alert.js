@@ -1,4 +1,4 @@
-//提示信息.。
+//提示信息..。
 function openAlert(value){
     const alert=document.querySelector('.alert');
     alert.innerHTML=value;
