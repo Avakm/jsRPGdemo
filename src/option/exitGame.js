@@ -1,4 +1,6 @@
 import {playClick} from './optionBgm'
+
+//退出游戏
 function exitGame(){
     playClick();
     var userAgent = navigator.userAgent;
