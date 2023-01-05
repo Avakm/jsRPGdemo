@@ -1,7 +1,6 @@
-# 魔塔
-
+js制作的rpg小游戏
 ## 介绍
-js编程实现魔塔小游戏（移动端）   技术栈：html+css+JavaScript+webpack（本游戏没有用canvas，纯贴图游戏）
+js编程实现魔塔小游戏（移动端）   技术栈：html+css+JavaScript+webpack
 ### 游戏主页
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0902/155515_5f19db08_7789347.png "879128351-612a1e64714e0_fix732.png")
 ### 游戏界面展示
