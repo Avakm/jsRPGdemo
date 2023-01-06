@@ -4,6 +4,7 @@ import {addHeroinfo as updateHeroinfo}from '../init/addContent';
 import {addEquipList as updateEquipinfo} from '../init/addContent';
 import event from './event';
 
+//英雄坐标
 let heronextPoint={};
 //向上
 function toUp(hero,maps){
