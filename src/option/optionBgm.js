@@ -4,6 +4,7 @@ function playScreenbgm(){
     screenbgm.load();
     screenbgm.play();
 }
+//播放背景音乐
 function playGamebgm(){
     const gamebgm=document.querySelector('.gamebgm');
     gamebgm.load();
