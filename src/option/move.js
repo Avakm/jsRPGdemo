@@ -6,7 +6,7 @@ import event from './event';
 
 //英雄坐标
 let heronextPoint={};
-//向上
+//向上移动
 function toUp(hero,maps){
 	let map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x;
@@ -17,7 +17,7 @@ function toUp(hero,maps){
 	let mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
-//向下
+//向下移动
 function toDown(hero,maps){
 	let map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x;
@@ -28,7 +28,7 @@ function toDown(hero,maps){
 	let mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
-//向右
+//向右移动
 function toRight(hero,maps){
 	let map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x+1;
@@ -40,6 +40,7 @@ function toRight(hero,maps){
 	heroMove(mvalue,hero,maps);
 }
 
+//向左移动
 function toLeft(hero,maps){
 	let map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x-1;
