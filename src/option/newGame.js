@@ -13,8 +13,8 @@ function newGame(){
     if(game){
         game.innerHTML='';
     }
-    let newhero=new Hero();
-    let newmap=new Map();
+    const newhero=new Hero();
+    const newmap=new Map();
     init(newhero,newmap.map);
     const newgame=document.querySelector('.game');
     const menu=document.querySelector('.caidanbtn');

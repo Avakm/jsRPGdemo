@@ -17,7 +17,7 @@ export default class Hero{
         this.shopindex=1;
         this.gold=0,   //金币
         this.equipList=[],   //装备列表
-        this.floor=15,  //所处楼层
+        this.floor=1,  //所处楼层
         this.heroPoint={},//英雄所处位置
         this.keyList={
             yellowKey:0,
