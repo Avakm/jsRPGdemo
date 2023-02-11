@@ -101,8 +101,8 @@ const autoMove =(hero,maps,path,i=1)=>{
     })
 }
 const getOffsetLeft = (obj)=>{
-	var tmp = obj.offsetLeft;
-	var val = obj.offsetParent;
+    let tmp = obj.offsetLeft;
+	let val = obj.offsetParent;
 	while(val != null){
 	tmp += val.offsetLeft;
 	  val = val.offsetParent;
@@ -110,8 +110,8 @@ const getOffsetLeft = (obj)=>{
   return tmp;
 }
 const getOffsetTop = (obj)=>{
-	var tmp = obj.offsetTop;
-	var val = obj.offsetParent;
+	let tmp = obj.offsetTop;
+	let val = obj.offsetParent;
 	while(val != null){
 	tmp += val.offsetTop;
 	  val = val.offsetParent;
@@ -130,8 +130,8 @@ const debounce = (fn, delay) => {
     };
   }
    const deepClone=(obj)=>{
-    var out = [],i = 0,len = obj.length;
-    for (; i < len; i++) {
+    const out = [],len = obj.length;
+    for (let i=0 ; i < len; i++) {
         if (obj[i] instanceof Array){
             out[i] = deepClone(obj[i]);
         }

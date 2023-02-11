@@ -4,14 +4,14 @@ import monsterList from '../data/monster';
 function  updateBookinfo(hero,newmap) {
     const bookInfo=document.querySelector('.bookInfo');
     bookInfo.innerHTML='';
-    let s=new Set();
+    const s=new Set();
     for(let i=0;i<newmap.length;i++){
         for(let j=0;j<newmap[i].length;j++){
             s.add(newmap[i][j])
         }
     }
     let map=[...s];
-    for(var i=0;i<map.length;i++){
+    for(let i=0;i<map.length;i++){
         if(map[i]===200){
             const div=document.createElement('div');
             const img=new Image();

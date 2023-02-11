@@ -36,13 +36,17 @@ function loadStore(){
     let map=storeList[index].data.map;
     let hero=storeList[index].data.hero;
     let newHero=new Hero();
-    hero.attackMonster=newHero.attackMonster;
-    hero.getGoods=newHero.getGoods;
-    hero.openDoor=newHero.openDoor;
-    hero.meetNpc=newHero.meetNpc;
-    hero.getEquipment=newHero.getEquipment;
-    hero.meetWall=newHero.meetWall;
-    hero.openShop=newHero.openShop;
+    hero = {
+        ...hero,
+        attackMonster:newHero.attackMonster,
+        getGoods:newHero.getGoods,
+        openDoor:newHero.openDoor,
+        meetNpc:newHero.meetNpc,
+        getEquipment:newHero.getEquipment,
+        meetWall:newHero.meetWall,
+        openShop:newHero.openShop
+    }
+    console.log(hero.meetWall)
     const game=document.querySelector('.game');
     game.innerHTML='';
     init(hero,map.map);

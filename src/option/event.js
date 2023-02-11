@@ -145,9 +145,9 @@ function sufferEvent(hero,map,mvalue,maps){
     }
 }
 function containMonster(map){   //判断该层地图中还有没有20 40
-	for(var i=0;i<map.length;i++){
-		for(var j=0;j<map[i].length;j++){
-			var mvalue=map[i][j];
+	for(let i=0;i<map.length;i++){
+		for(let j=0;j<map[i].length;j++){
+			let mvalue=map[i][j];
 			if(mvalue==40||mvalue==20){
                 return false;
 			}
@@ -156,9 +156,9 @@ function containMonster(map){   //判断该层地图中还有没有20 40
 	return true;
 }
 function containMonster1(map){   //判断第二层地图中还有没有对应怪物
-	for(var i=0;i<map.length;i++){
-		for(var j=0;j<map[i].length;j++){
-			var mvalue=map[i][j];
+	for(let i=0;i<map.length;i++){
+		for(let j=0;j<map[i].length;j++){
+			let mvalue=map[i][j];
 			if(mvalue==250){
 				return false;
 			}
