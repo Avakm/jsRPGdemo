@@ -5,50 +5,50 @@ import {addEquipList as updateEquipinfo} from '../init/addContent';
 import event from './event';
 
 //英雄坐标
-let heronextPoint={};
+const heronextPoint={};
 //向上移动
 function toUp(hero,maps){
-	let map=maps[hero.floor-1];
+	const map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x;
 	heronextPoint.y=hero.heroPoint.y-1;
 	if((heronextPoint.x<0||heronextPoint.x>10)||(heronextPoint.y<0||heronextPoint.y>10)){
 		return;
 	}
-	let mvalue=map[heronextPoint.y][heronextPoint.x];
+	const mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
 //向下移动
 function toDown(hero,maps){
-	let map=maps[hero.floor-1];
+	const map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x;
 	heronextPoint.y=hero.heroPoint.y+1;
 	if((heronextPoint.x<0||heronextPoint.x>10)||(heronextPoint.y<0||heronextPoint.y>10)){
 		return;
 	}
-	let mvalue=map[heronextPoint.y][heronextPoint.x];
+	const mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
 //向右移动
 function toRight(hero,maps){
-	let map=maps[hero.floor-1];
+	const map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x+1;
 	heronextPoint.y=hero.heroPoint.y;
 	if((heronextPoint.x<0||heronextPoint.x>10)||(heronextPoint.y<0||heronextPoint.y>10)){
 		return;
 	}
-	let mvalue=map[heronextPoint.y][heronextPoint.x];
+	const mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
 
 //向左移动
 function toLeft(hero,maps){
-	let map=maps[hero.floor-1];
+	const map=maps[hero.floor-1];
     heronextPoint.x=hero.heroPoint.x-1;
 	heronextPoint.y=hero.heroPoint.y;
 	if((heronextPoint.x<0||heronextPoint.x>10)||(heronextPoint.y<0||heronextPoint.y>10)){
 		return;
 	}
-	let mvalue=map[heronextPoint.y][heronextPoint.x];
+	const mvalue=map[heronextPoint.y][heronextPoint.x];
 	heroMove(mvalue,hero,maps);
 }
 
