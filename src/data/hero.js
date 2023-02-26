@@ -1,10 +1,10 @@
 import monsterList from './monster.js';
 import goodsList from './goods.js';
 import equipmentList from './equipment.js';
-import openAlert from '../option/alert.js';
-import openNpcinfo from '../option/openNpcinfo.js';
+import openAlert from '../operate/alert.js';
+import openNpcinfo from '../operate/openNpcinfo.js';
 import {addHeroinfo as updateHeroinfo}from '../init/addContent.js';
-import {playGather,playOpendoor,playAttack,playDestory} from '../option/optionBgm.js';
+import {playGather,playOpendoor,playAttack,playDestory} from '../operate/optionBgm.js';
 import npcList from './npc.js';
 
 

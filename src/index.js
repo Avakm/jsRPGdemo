@@ -3,7 +3,7 @@ import 'lib-flexible';
 import initGame from './init/initGame';
 import initStore from './init/initStore';
 import initMainpage from './init/initMainpage'
-import exitGame from './option/exitGame';
+import exitGame from './operate/exitGame';
 import 'reset-css';
 import './css/border.css'
 import './css/style.css';
@@ -19,12 +19,12 @@ const choiceItem=document.querySelectorAll('.choiceItem');
 //界面选择
 //1.新游戏
 choiceItem[0].addEventListener('click',async()=>{
-    const {default:newGame}=await import(/* webpackPrefetch:true */'./option/newGame.js');
+    const {default:newGame}=await import(/* webpackPrefetch:true */'./operate/newGame.js');
     newGame();
 })
 //2.读取存档
 choiceItem[1].addEventListener('click',()=>{
-    import(/* webpackPrefetch:true */'./option/openStorePage').then(({default:openStorePage})=>{
+    import(/* webpackPrefetch:true */'./operate/openStorePage').then(({default:openStorePage})=>{
         openStorePage('.screen'); 
     })
 })
